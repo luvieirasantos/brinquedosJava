@@ -3,34 +3,32 @@ package br.com.fiap.brinquedos.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "TDS_TB_Brinquedos")
+@Table(name = "TB_BRINQUEDO")
 public class Brinquedo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id; // Identificador único do brinquedo
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // usa o auto incremento do Oracle
+    private Long id;
 
-    @Column(name = "nome", nullable = false)
-    private String nome; // Nome do brinquedo
+    @Column(nullable = false, length = 100)
+    private String nome;
 
-    @Column(name = "tipo", nullable = false)
-    private String tipo; // Tipo do brinquedo (ex: educativo, eletrônico, etc.)
+    @Column(nullable = false, length = 50)
+    private String tipo;
 
-    @Column(name = "classificacao", nullable = false)
-    private String classificacao; // Classificação etária (ex: "3+", "8+")
+    @Column(nullable = false, length = 10)
+    private String classificacao;
 
-    @Column(name = "tamanho", nullable = false)
-    private String tamanho; // Tamanho do brinquedo (ex: pequeno, médio, grande)
+    @Column(nullable = false, length = 20)
+    private String tamanho;
 
-    @Column(name = "preco", nullable = false)
-    private double preco; // Preço do brinquedo
+    @Column(nullable = false)
+    private double preco;
 
     // Construtor padrão (obrigatório para JPA)
-    public Brinquedo() {
-    }
+    public Brinquedo() {}
 
-    // Construtor completo
+    // Construtor completo (opcional, útil em testes)
     public Brinquedo(String nome, String tipo, String classificacao, String tamanho, double preco) {
         this.nome = nome;
         this.tipo = tipo;
