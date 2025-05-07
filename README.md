@@ -1,10 +1,10 @@
-# 🧸 Brinquedos - API REST com Spring Boot e Oracle
+# Brinquedos - API REST com Spring Boot e Oracle
 
 Este projeto consiste em uma aplicação Java usando **Spring Boot** conectada ao **banco de dados Oracle**, desenvolvida como parte do Checkpoint 2 da disciplina de Java e Arquitetura de Sistemas da FIAP.
 
 A aplicação tem como objetivo **cadastrar, listar, atualizar e excluir brinquedos**, com persistência dos dados no banco de dados Oracle usando Spring Data JPA.
 
-## 🔧 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java 17+
 - Spring Boot 3.4.5
@@ -17,7 +17,7 @@ A aplicação tem como objetivo **cadastrar, listar, atualizar e excluir brinque
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### 1. Clonar o repositório
 ```bash
@@ -43,7 +43,7 @@ Execute a classe `BrinquedosApplication.java`.
 
 ---
 
-## 🧪 Endpoints Testados no Postman
+## Endpoints Testados no Postman
 
 ### POST `/brinquedos`  
 Cadastrar um novo brinquedo:  
@@ -68,7 +68,7 @@ Remove um brinquedo do banco de dados.
 
 ---
 
-## 📸 Capturas de Tela
+## Capturas de Tela
 
 ### Screenshot do Spring Initializr com as dependências utilizadas
 ![image](https://github.com/user-attachments/assets/00b4b595-e307-4583-99ba-26d511f32445)
@@ -88,7 +88,7 @@ Remove um brinquedo do banco de dados.
 
 ---
 
-## 👤 Integrantes
+## Integrantes
 
 - **Lu Vieira Santos**  
   RM: 558935
